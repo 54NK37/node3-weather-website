@@ -62,7 +62,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: "Help",
-        msg: "help msg",
+        msg: "In case of issues ,contact me!",
         name: "Sanket"
     })
 })
