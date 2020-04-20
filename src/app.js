@@ -46,7 +46,8 @@ app.get('', (req, res) => {
     //injecting values {}
     res.render('index', {
         title: "Weather App",
-        name: "Sanket"
+        name: "Sanket",
+        msg: "Enter location to get weather information"
     })
 })
 

@@ -15,8 +15,8 @@ const forecast = (latitude, longitude, callback) => {
             callback("Invalid coordinates", undefined)
         } else {
             //console.log(response.body.current.weather_descriptions[0] + ". Is is currently " + response.body.current.temperature + " degrees celcius out there.")
-            //console.log(body)
-            const data = body.current.weather_descriptions[0] + ". Is is currently " + body.current.temperature + " degrees celcius out there."
+            console.log(body.current)
+            const data = body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees celcius out there.There is " + body.current.precip + "% chances of Rain"
             callback(undefined, data)
         }
     })
